@@ -9,9 +9,9 @@ developed as a team using HTML and CSS.
 
 | Name | GitHub Username | Role | Assigned Page |
 |------|-----------------|------|---------------|
-| Mounika | mounika892 | Team Lead | Home Page |
-| Neha | Neha1-2006 | Member | About Page |
-| Student 3 | username | Member | Destinations Page |
+| Neha | Neha1-2006 | Team Lead | Home Page |
+| Kavana | Kavana83| Member | Destinations Page |
+| Mounika | mounika892  | Member | About Page |
 
 ## Technologies Used
 
