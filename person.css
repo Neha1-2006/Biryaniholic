@@ -1,0 +1,684 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f5ef;
+    color: #17221f;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    height: 75px;
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    color: #26322f;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #c46b32;
+}
+
+.nav-button {
+    padding: 12px 20px;
+
+    background: #17221f;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    background: #c46b32;
+}
+
+
+/* =========================
+   PAGE HERO
+========================= */
+
+.page-hero {
+    min-height: 570px;
+
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.experiences-hero {
+    background:
+        linear-gradient(
+            rgba(0,0,0,.5),
+            rgba(0,0,0,.5)
+        ),
+        url("https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1800&q=85");
+}
+
+.about-hero {
+    background:
+        linear-gradient(
+            rgba(0,0,0,.5),
+            rgba(0,0,0,.5)
+        ),
+        url("https://images.unsplash.com/photo-1521292270410-a8c4d7169bd2?auto=format&fit=crop&w=1800&q=85");
+}
+
+.contact-hero {
+    background:
+        linear-gradient(
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.55)
+        ),
+        url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1800&q=85");
+}
+
+.page-hero div {
+    max-width: 850px;
+}
+
+.page-hero p {
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.page-hero h1 {
+    font-size: clamp(50px, 8vw, 100px);
+
+    line-height: .9;
+
+    letter-spacing: -4px;
+
+    margin-bottom: 30px;
+}
+
+.page-hero span {
+    display: block;
+
+    max-width: 600px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-intro {
+    text-align: center;
+
+    padding: 90px 20px 50px;
+}
+
+.label {
+    color: #c46b32;
+
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.experience-intro h2 {
+    font-size: 50px;
+
+    line-height: 1;
+}
+
+.experience-grid {
+    padding: 30px 7% 100px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.experience-card {
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    transition: .3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-8px);
+}
+
+.experience-icon {
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.experience-card h3 {
+    font-size: 23px;
+
+    margin-bottom: 12px;
+}
+
+.experience-card p {
+    color: #68716e;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   EXPERIENCE BANNER
+========================= */
+
+.experience-banner {
+    min-height: 430px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(15,27,23,.82),
+            rgba(15,27,23,.82)
+        ),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+}
+
+.experience-banner p {
+    letter-spacing: 3px;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+}
+
+.experience-banner h2 {
+    font-size: 55px;
+
+    line-height: 1;
+
+    margin-bottom: 30px;
+}
+
+.experience-banner a,
+.contact-cta a {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background: #d8783a;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+    padding: 100px 7%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+
+    height: 550px;
+
+    object-fit: cover;
+
+    border-radius: 18px;
+}
+
+.about-content h2 {
+    font-size: 50px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.about-content > p:not(.label) {
+    color: #68716e;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+.main-button {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    padding: 15px 25px;
+
+    border-radius: 30px;
+
+    background: #d8783a;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.mission {
+    padding: 100px 20px;
+
+    text-align: center;
+
+    background: #e9e5da;
+}
+
+.mission h2 {
+    font-size: 55px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.mission > p:last-child {
+    color: #68716e;
+}
+
+.values {
+    padding: 80px 7%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.value {
+    padding: 30px;
+
+    border-top: 2px solid #c46b32;
+}
+
+.value span {
+    color: #c46b32;
+
+    font-weight: bold;
+}
+
+.value h3 {
+    font-size: 25px;
+
+    margin: 15px 0;
+}
+
+.value p {
+    color: #68716e;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    padding: 100px 7%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+}
+
+.contact-info h2 {
+    font-size: 55px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+}
+
+.contact-info > p:not(.label) {
+    color: #68716e;
+
+    line-height: 1.8;
+
+    max-width: 500px;
+
+    margin-bottom: 35px;
+}
+
+.contact-detail {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin-bottom: 20px;
+}
+
+.contact-detail span {
+    color: #68716e;
+}
+
+.contact-form {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+}
+
+.contact-form form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    border: none;
+
+    padding: 15px;
+
+    border-radius: 30px;
+
+    background: #d8783a;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.contact-form button:hover {
+    background: #b85f28;
+}
+
+.contact-cta {
+    padding: 90px 20px;
+
+    text-align: center;
+
+    background: #e9e5da;
+}
+
+.contact-cta h2 {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+.contact-cta p {
+    color: #68716e;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111916;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 55px 20px;
+}
+
+.footer-logo {
+    font-size: 28px;
+
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+
+footer > p {
+    color: #aeb7b3;
+}
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin: 25px 0;
+
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #d8783a;
+}
+
+.copyright {
+    font-size: 12px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar nav {
+        gap: 12px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-section,
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .values {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .page-hero {
+        min-height: 500px;
+
+        padding: 60px 7%;
+    }
+
+    .page-hero h1 {
+        font-size: 55px;
+
+        letter-spacing: -2px;
+    }
+
+    .experience-grid,
+    .values {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-intro h2,
+    .about-content h2,
+    .contact-info h2 {
+        font-size: 40px;
+    }
+
+    .mission h2,
+    .experience-banner h2 {
+        font-size: 40px;
+    }
+
+    .about-section,
+    .contact-section {
+        padding: 70px 7%;
+    }
+
+    .about-image img {
+        height: 400px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+}
